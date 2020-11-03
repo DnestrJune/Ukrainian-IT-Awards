@@ -1,0 +1,655 @@
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.main_dark_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+
+  & svg {
+    width: 116rem;
+    max-width: 72vw;
+    height: auto;
+  }
+}
+.main_photo_bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  & img {
+    width: 44vw;
+    min-width: 100vh;
+    height: auto;
+  }
+}
+
+.main_left_top_block {
+  position: absolute;
+  left: 0;
+  top: 19.3rem;
+  width: 2rem;
+  height: 6.2rem;
+  background: $violet;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.main_blocks_wrap_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.main_block_1 {
+  position: absolute;
+  bottom: 0;
+  left: 6rem;
+  width: 12rem;
+  height: 1rem;
+  background: $violet;
+  opacity: .6;
+}
+
+.main_block_2 {
+  position: absolute;
+  bottom: 0;
+  left: 18rem;
+  transform: translateY(100%);
+  width: 6rem;
+  height: 1rem;
+  background: $violet;
+}
+
+.main_block_3 {
+  position: absolute;
+  bottom: 0;
+  left: 48rem;
+  width: 60px;
+  height: 10px;
+  background: $violet;
+  opacity: 0.7;
+}
+
+.main_block_4 {
+  position: absolute;
+  bottom: 1rem;
+  left: 54rem;
+  width: 6rem;
+  height: 1rem;
+  background: $violet;
+  opacity: 0.4;
+}
+
+.main_block_5 {
+  position: absolute;
+  bottom: 5rem;
+  left: 84rem;
+  width: 12rem;
+  height: 2rem;
+  background: $violet;
+  opacity: 0.7;
+}
+
+.main_block_6 {
+  position: absolute;
+  bottom: 0;
+  left: 90rem;
+  transform: translateY(100%);
+  width: 12rem;
+  height: 1rem;
+  background: $violet;
+}
+
+.main_block_7 {
+  position: absolute;
+  bottom: 0;
+  right: 25.6rem;
+  transform: translateY(66%);
+  width: 18.3rem;
+  height: 3rem;
+  background: $violet;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.main_block_8 {
+  position: absolute;
+  bottom: 0;
+  right: 18rem;
+  transform: translateY(100%);
+  width: 12rem;
+  height: 1rem;
+  background: $darkBlue;
+}
+
+.main_block_9 {
+  position: absolute;
+  bottom: 10rem;
+  right: 0;
+  width: 6rem;
+  height: 2rem;
+  background: $violet;
+  opacity: 0.45;
+}
+
+.main_block_10 {
+  position: absolute;
+  top: 24rem;
+  right: 52.7rem;
+  width: 12rem;
+  height: 4rem;
+  background: $violet;
+  opacity: 0.3;
+}
+
+.main_block_11 {
+  position: absolute;
+  top: 24.3rem;
+  right: 1px;
+  width: 11.9rem;
+  height: 1rem;
+  background: $violet;
+  opacity: 0.45;
+  z-index: 1;
+}
+
+.main_block_12 {
+  position: absolute;
+  top: 22.8rem;
+  right: 0;
+  width: 6rem;
+  height: 2rem;
+  background: $violet;
+  opacity: 0.7;
+}
+
+.main_block_13 {
+  position: absolute;
+  top: 0;
+  right: 9.4rem;
+  width: 1.6rem;
+  height: 0.3rem;
+  background: #A21ED8;
+}
+
+
+.main_content_wr {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 30rem 10rem 9rem 5.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.main_content_title {
+  font-family: $Mbold;
+  font-size: 8.6rem;
+  line-height: 8.3rem;
+  color: $white;
+}
+
+.main_content_dates_wrap {
+  display: flex;
+  align-items: center;
+}
+.main_content_date_wr {
+  width: 36.5rem;
+}
+.main_content_date_title {
+  position: relative;
+  font-family: $M500;
+  font-size: 1.6rem;
+  line-height: 3.7rem;
+  color: $violetText;
+}
+
+.main_content_date_title_block {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-193%, -50%);
+  width: 4rem;
+  height: 1.1rem;
+  background: $violet;
+  opacity: 0.6;
+}
+
+.main_content_date_txt {
+  font-family: $M600;
+  font-size: 2.8rem;
+  line-height: 6.7rem;
+  color: $white;
+}
+
+.main_btns_wrap {
+  display: flex;
+  align-items: center;
+}
+.main_big_btn_wr {
+  position: relative;
+  width: 36rem;
+  height: 8rem;
+  margin-right: 3rem;
+  padding: 0 2.5rem 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  & span {
+    position: relative;
+    z-index: 1;
+
+    font-family: $M600;
+    font-size: 2.6rem;
+    line-height: 3.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.045em;
+    color: $white;
+  }
+  &:hover span {
+    z-index: 1;
+    color: $violet;
+  }
+
+  & svg {
+    position: relative;
+    width: 3.8rem;
+    height: 2.4rem;
+  }
+  &:hover svg {
+    z-index: 1;
+  }
+
+  & svg path {
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  &:hover svg path {
+    fill: $violet;
+  }
+}
+.main_big_btn_wr_before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $violet;
+  pointer-events: none;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .main_big_btn_wr:hover & {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    transform: translateY(-100%);
+    width: 18.4rem;
+    height: 1rem;
+    background: $violet;
+    opacity: 0.35;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  .main_big_btn_wr:hover &::before {
+    transform: translateY(-5rem);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 6rem;
+    transform: translateY(100%);
+    position: absolute;
+    width: 6rem;
+    height: .5rem;
+
+    background: $violet;
+    opacity: 0.55;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  .main_big_btn_wr:hover &::after {
+    transform: translateY(8rem);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+  }
+}
+
+
+.main_big_btn_wr_after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .main_big_btn_wr:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  & div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: $white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    right: -1.4rem;
+    width: 10rem;
+    height: 4rem;
+    background: $violet;
+    opacity: 0.35;
+    transform: translate(2rem, -5rem);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  .main_big_btn_wr:hover &::before {
+    transform: none;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+    position: absolute;
+    width: 8rem;
+    height: .5rem;
+    background: $violet;
+    opacity: 0.55;
+    transform: translateY(8rem);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  .main_big_btn_wr:hover &::after {
+    transform: translateY(100%);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+  }
+}
+
+.main_btn_wr {
+  position: relative;
+  width: 34.1rem;
+  height: 6rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $violet;
+    opacity: .5;
+    z-index: 1;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  &:hover::before {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  &:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  & span {
+    position: relative;
+    font-family: $M500;
+    font-size: 2.2rem;
+    line-height: 3.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.045em;
+    color: $white;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  &:hover span {
+    z-index: 1;
+    color: $violet;
+  }
+
+  & svg {
+    position: relative;
+    width: 3rem;
+    height: 1.6rem;
+  }
+  &:hover svg {
+    z-index: 1;
+  }
+
+  & svg path {
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  &:hover svg path {
+    fill: $violet;
+  }
+}
+
+.main_btn_wr_before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $violet;
+  pointer-events: none;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .main_btn_wr:hover & {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    transform: translateY(-100%);
+    width: 8rem;
+    height: .8rem;
+    background: $violet;
+    opacity: 0.35;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  .main_btn_wr:hover &::before {
+    transform: translateY(-5rem);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 6rem;
+    transform: translateY(100%);
+    position: absolute;
+    width: 6rem;
+    height: .8rem;
+
+    background: $violet;
+    opacity: 0.55;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  .main_btn_wr:hover &::after {
+    transform: translateY(8rem);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+  }
+}
+
+
+.main_btn_wr_after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .main_btn_wr:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  & div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: $white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 6rem;
+    width: 6rem;
+    height: .8rem;
+    background: $violet;
+    opacity: 0.3;
+    transform: translate(2rem, -5rem);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  .main_btn_wr:hover &::before {
+    transform: translate(0, -100%);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5.1rem;
+    position: absolute;
+    width: 13rem;
+    height: 1rem;
+    background: $violet;
+    opacity: 0.55;
+    transform: translateY(8rem);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  .main_btn_wr:hover &::after {
+    transform: translateY(100%);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+  }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+  .main {
+    height: 84rem;
+  }
+  .main_dark_bg svg {
+    width: 91rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .main_content_title {
+    font-size: 7.6rem;
+    line-height: 7.3rem;
+  }
+
+  .main_content_date_wr {
+    width: 32rem;
+  }
+  .main_content_date_title {
+    font-size: 1.4rem;
+  }
+  .main_content_date_txt {
+    font-size: 2rem;
+  }
+
+  .main_big_btn_wr {
+    width: 31rem;
+    height: 7rem;
+
+    & span {
+      font-size: 2rem;
+    }
+
+    &  svg {
+      width: 3rem;
+    }
+  }
+
+  .main_btn_wr {
+    width: 29rem;
+    height: 5.5rem;
+
+    & span {
+      font-size: 1.8rem;
+    }
+
+    & svg {
+      width: 2.5rem;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main_dark_bg svg {
+    max-width: unset;
+    transform: translateX(-30%);
+  }
+
+  .main_content_title {
+    font-size: 6.6rem;
+  }
+}
+
+
+
+
+
+
+
+
+// --

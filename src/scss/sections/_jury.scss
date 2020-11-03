@@ -1,0 +1,279 @@
+.jury_wrap {
+  position: relative;
+  width: 100%;
+  background-color: $violet;
+
+}
+.jury_overflow {
+  position: relative;
+  width: 100%;
+  padding: 8.4rem 6rem 15rem 6rem;
+  overflow: hidden;
+}
+
+.jury_top_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(-99%);
+
+  img {
+    width: 100%;
+  }
+}
+
+.jury_title {
+  margin-bottom: 2.5rem;
+
+  font-family: $Mbold;
+  font-size: 5rem;
+  color: $white;
+}
+.jury_years_btn_wr {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jury_years_wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.jury_years_wr_row {display: flex;}
+
+.jury_year_wr {
+  width: 7.1rem;
+  height: 3.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $paleViolet;
+  border-left: none;
+  cursor: pointer;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  &:first-child {
+    border-left: 1px solid $paleViolet;
+  }
+
+  &.active {
+    background-color: $paleViolet;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: $paleViolet;
+  }
+
+  & span {
+    font-family: $M500;
+    font-size: 1.8rem;
+    color: $notWhite;
+  }
+
+  &.active span {
+    color: $violetDarken;
+  }
+}
+
+.jury_btn_wr {
+  height: 4.1rem;
+  padding: 0 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  cursor: pointer;
+
+  & span {
+    margin-left: 1rem;
+    font-family: $M600;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    color: $notBlack;
+
+  }
+
+  & svg {
+    width: 2.4rem;
+    height: 1.4rem;
+    margin-left: 1.5rem;
+  }
+
+  &:hover svg {
+    animation: 2s arrow_move infinite;
+  }
+}
+
+@keyframes arrow_move {
+  0% { transform: translateX(0)};
+  20% { transform: translateX(50%)};
+  40% { transform: translateX(30%)};
+  60% { transform: translateX(50%)};
+  80% { transform: translateX(0)};
+}
+
+.jury_photos_wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $violet;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+
+  &:hover::after {
+    opacity: .5;
+    pointer-events: none;
+  }
+}
+
+.jury_photo_wr {
+  position: relative;
+  width: 13.2rem;
+  height: 13.2rem;
+}
+
+.jury_photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.jury_photo_hover {
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .jury_photo_wr:hover & {
+    opacity: 1;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+}
+
+.jury_photo_ico {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.jury_photo_author_wr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28.3rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1rem 1.5rem 1.9rem;
+  transform: translateY(100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+
+    .jury_photo_wr:hover &::before {
+      opacity: 1;
+      transform: none;
+    }
+}
+
+.jury_photo_author_name {
+  position: relative;
+  margin-bottom: 1rem;
+
+  font-family: $M500;
+  font-size: 2.4rem;
+  color: $violet;
+
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .jury_photo_wr:hover & {
+    opacity: 1;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.3s;
+  }
+}
+
+.jury_photo_author_title {
+  position: relative;
+  margin-bottom: 1rem;
+
+  font-family: $Mbold;
+  font-size: 1.6rem;
+  color: $black;
+
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .jury_photo_wr:hover & {
+    opacity: 1;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.4s;
+  }
+}
+
+.jury_photo_author_txt {
+  position: relative;
+  font-family: $M500;
+  font-size: 1.6rem;
+  color: $black;
+
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .jury_photo_wr:hover & {
+    opacity: 1;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.5s;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .jury_title {
+    font-size: 4rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+// --

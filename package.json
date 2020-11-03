@@ -1,0 +1,24 @@
+{
+  "name": "Ukrainian_IT_Awards_2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.4",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {}
+}

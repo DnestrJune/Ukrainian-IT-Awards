@@ -1,0 +1,228 @@
+.stages_wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  // padding: 0 11rem;
+  padding-top: 12.4rem;
+  background: $white;
+}
+.stages_title {
+  margin-bottom: 3rem;
+  padding-left: 6rem;
+
+  font-family: $M600;
+  font-size: 3.4rem;
+  color: $black;
+}
+.stages_items_wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stages_item_wr {
+  position: relative;
+  width: 33.333%;
+  height: 42rem;
+  padding: 4.9rem 6rem 10.5rem;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  &:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 80%;
+    background: $lightGray;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+
+  &:not(:last-child):hover::before {
+    opacity: 0;
+  }
+
+  &:hover {
+    background: $violet;
+  }
+}
+
+.stages_item_images_wr {
+  position: relative;
+  width: 100%;
+  height: 9.2rem;
+  margin-bottom: 4.3rem;
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+}
+
+.stages_item_1 {
+  & img:nth-child(1) { transform: translateX(2rem); }
+  .stages_item_wr:hover & img:nth-child(1) { transform: translateX(0rem); }
+
+  & img:nth-child(2) { transform: translateX(10rem); }
+  .stages_item_wr:hover & img:nth-child(2) { transform: translateX(2rem); }
+
+  & img:nth-child(3) { transform: translateX(9rem); }
+  .stages_item_wr:hover & img:nth-child(3) { transform: translateX(11rem); }
+
+  & img:nth-child(4) { transform: translateX(0rem); }
+  .stages_item_wr:hover & img:nth-child(4) { transform: translateX(7rem); }
+}
+
+.stages_item_2 {
+  & img:nth-child(1) {
+    top: auto;
+    bottom: 0;
+    height: 85%;
+    transform: translateX(1.6rem);
+  }
+  .stages_item_wr:hover & img:nth-child(1) { transform: translateX(0rem); }
+
+  & img:nth-child(2) {
+    height: 80%;
+    transform: translateX(0rem);
+  }
+  .stages_item_wr:hover & img:nth-child(2) { transform: translateX(5rem); }
+
+  & img:nth-child(3) { transform: translateX(6.5rem); }
+  .stages_item_wr:hover & img:nth-child(3) { transform: translateX(8.5rem); }
+
+  & img:nth-child(4) {
+    height: 75%;
+    transform: translateX(3.5rem);
+  }
+  .stages_item_wr:hover & img:nth-child(4) {transform: translateX(1rem);}
+}
+
+.stages_item_3 {
+  & img:nth-child(1) {
+    width: 3.9rem;
+    height: 3.9rem;
+    transform: translate(.6rem, 4.5rem);
+  }
+  .stages_item_wr:hover & img:nth-child(1) {
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: translate(4.5rem, 1rem);
+  }
+
+  & img:nth-child(2) {
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: translate(4.5rem, 1rem);
+  }
+  .stages_item_wr:hover & img:nth-child(2) {
+    width: 3.9rem;
+    height: 3.9rem;
+    transform: translate(.6rem, 4.5rem);
+  }
+
+  & img:nth-child(3) {
+    width: 3rem;
+    height: 3rem;
+    transform: translate(4.5rem, 4.5rem);
+  }
+  .stages_item_wr:hover & img:nth-child(3) {
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateX(0rem);
+  }
+
+  & img:nth-child(4) {
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateX(0rem);
+  }
+  .stages_item_wr:hover & img:nth-child(4) {
+    width: 3rem;
+    height: 3rem;
+    transform: translate(4.5rem, 4.5rem);
+  }
+}
+
+.stages_item_date {
+  margin-bottom: 1.3rem;
+
+  font-family: $M500;
+  font-size: 2.6rem;
+  color: $gray;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .stages_item_wr:hover & {
+    color: $white;
+  }
+}
+
+.stages_item_txt {
+  font-family: $M500;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  .stages_item_wr:hover & {
+    color: $white;
+  }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    padding: 0;
+    padding-top: 12.4rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .stages_title {
+    font-size: 3rem;
+  }
+
+  .stages_item_images_wr {
+    height: 7rem;
+    margin-bottom: 3.3rem;
+  }
+
+  .stages_item_date {
+    font-size: 2.2rem;
+  }
+
+  .stages_item_txt {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .stages_wrap {
+    // padding: 0 4rem;
+    // padding-top: 9rem;
+  }
+
+  .stages_item_wr {
+      padding: 4.9rem 2rem 9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --

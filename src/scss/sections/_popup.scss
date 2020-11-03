@@ -1,0 +1,212 @@
+.nominations_popup_wrap {
+  position: fixed;
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94%;
+  min-height: 85%;
+  padding: 4.5rem 8.5rem 3.2rem 11rem;
+  background: $turquoise;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+}
+.nominations_popup_wrap.visible {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.nominations_popup_ico {
+  position: absolute;
+  top: 2.2rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+
+  & svg {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  & span {
+    margin-left: 2.8rem;
+
+    font-family: $M500;
+    font-size: 2.4rem;
+    color: $white;
+  }
+}
+
+.nominations_popup_btns_wrap {
+  position: absolute;
+  top: 2.9rem;
+  right: 2.7rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nominations_popup_btn_wr {
+  height: 4.1rem;
+  padding: 0 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  cursor: pointer;
+
+  & span {
+    font-family: $M600;
+    font-size: 1.8rem;
+    color: $notBlack;
+  }
+
+  & svg {
+    width: 2.4rem;
+    height: 1.4rem;
+    margin-left: 1.5rem;
+  }
+
+  &:hover svg {
+    animation: 2s arrow_move infinite;
+  }
+}
+
+.nominations_popup_close_btn {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-left: 1.8rem;
+  cursor: pointer;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1);
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.nominations_popup_close_txt {
+  margin-left: 1rem;
+  cursor: pointer;
+
+  font-family: $M500;
+  font-size: 1.8rem;
+  color: $white;
+}
+
+.nominations_popup_title_num {
+  margin-bottom: 3.5rem;
+
+  font-family: $M600;
+  font-size: 2rem;
+  text-align: center;
+  color: $white;
+}
+
+.nominations_popup_top_txt {
+  width: 75%;
+  margin-bottom: 3rem;
+
+  font-family: $M500;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: $white;
+}
+
+.nominations_popup_juri_wr {
+  margin-bottom: 3.2rem;
+}
+
+.nominations_popup_juri_title {
+  margin-bottom: 1rem;
+
+  font-family: $Mbold;
+  font-size: 1.8rem;
+  color: $white;
+}
+
+.nominations_popup_juri_photos_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nominations_popup_juri_photo {
+  width: 12rem;
+  height: 12rem;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nominations_popup_txt_items_title {
+  margin-bottom: 0.7rem;
+
+  font-family: $Mbold;
+  font-size: 1.8rem;
+  color: $white;
+}
+
+.nominations_popup_container {
+  display: flex;
+}
+
+.nominations_popup_txt_half_item_wrap {
+  width: 50%;
+}
+
+.nominations_popup_txt_column_item_wr {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-right: 5.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.nominations_popup_txt_column_item_ico {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.7rem;
+  background: $white;
+  transform: translateY(80%);
+}
+
+.nominations_popup_txt_column_item_txt {
+  width: calc(100% - 1rem);
+  padding-left: .7rem;
+  font-family: $M500;
+  font-size: 1.8rem;
+  color: $white;
+}
+
+.nominations_popup_bottom_txt {
+  margin-bottom: 2.6rem;
+
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: $white;
+}
+
+.nominations_popup_bottom_btns_wr {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .nominations_popup_wrap {
+    padding: 4.5rem 4.5rem 3.2rem 5rem;
+  }
+}
+
+
+
+
+
+
+
+// --

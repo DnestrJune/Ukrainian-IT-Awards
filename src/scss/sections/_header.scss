@@ -1,0 +1,162 @@
+.header {
+  position: absolute;
+  top: 4.4rem;
+  left: 0;
+  width: 100%;
+  padding: 0 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+
+.header_left_wr {
+  display: flex;
+  align-items: center;
+}
+
+.header_left_ico {
+  width: 4.3rem;
+  height: 3.9rem;
+  margin-right: 1rem;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.header_left_txt {
+  font-family: $Mbold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  white-space: nowrap;
+  color: $white;
+}
+
+.header_right_wr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_right_menu_item_wr {
+  margin-left: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header_right_line {
+  width: 1px;
+  height: 4.1rem;
+  margin: 0 4.3rem 0 2.8rem;
+  background-color: $pink;
+  opacity: 0.2;
+}
+
+.header_right_lang_wr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_right_lang_item {
+  position: relative;
+  font-family: $Mbold;
+  font-size: 1.4rem;
+  color: $white;
+  cursor: pointer;
+  opacity: .5;
+  transition: all 0.9s cubic-bezier(.19,1,.22,1) 0.1s;
+
+  &:first-child {
+    margin-right: 1.6rem;
+  }
+
+  &.active {
+    pointer-events: none;
+    opacity: 1;
+    // transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  &.active span {
+    opacity: 0;
+  }
+}
+
+.header_right_lang_item_bold {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+
+  font-family: $Mbold;
+  font-size: 1.6rem;
+  color: $white;
+
+  opacity: 0;
+  transition: all 0.5s ease;
+
+  .active & {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.menu_item_cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_item {
+  position: relative;
+  margin: 0 1rem;
+
+  font-family: $Mbold;
+  font-size: 1.3rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-120%);
+    width: 100%;
+    height: 1px;
+    background: $white;
+    opacity: 0;
+    transition: all 0.9s cubic-bezier(.19,1,.22,1);
+  }
+
+  &:hover::before {
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: $grayDark;
+}
+
+// --

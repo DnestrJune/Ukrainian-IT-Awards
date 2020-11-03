@@ -1,0 +1,43 @@
+html {
+    font-size: 10px;
+}
+body, html {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 768px;
+    min-height: 550px;
+	  font-family: $M500;
+    color: $black;
+}
+
+* {
+    box-sizing: border-box;
+    font-weight: normal;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+a {
+  color: $white;;
+}
+b {
+	font-weight: bold;;
+}
+img {
+  display: block;
+}
+.noscroll {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 8px;
+    }
+}
